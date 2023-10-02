@@ -32,14 +32,16 @@ main {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    gap: 10px;
     height: 100%;
+    /* background-image: url(/src/image/bg-pattern-card.svg); */
 }
 
 .cartao img {
     width: 80px;
     height: 80px;
     margin-top: 80px;
+    border: 2px solid white;
+    border-radius: 50%;
 }
 
 .numeros {
@@ -49,12 +51,27 @@ main {
     width: 100%;
     padding-bottom: 30px;
     padding-top: 30px;
-    border-top: 1px groove var(--primary-medium);
+    border-top: 0.5px groove gainsboro;
+}
+
+.cidade {
+    font-size: 15px;
+}
+
+.contador {
+    padding-bottom: 4px;
+}
+
+.tipo-contador {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .numeros .info .contador,
 .cartao .perfil p {
     font-weight: bold;
+    text-align: center;
 }
 
 .cartao .perfil .idade,
