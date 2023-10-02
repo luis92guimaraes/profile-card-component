@@ -1,2 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Outfit:wght@400;700&display=swap');
 
+body {
+    font-family: 'kumbh sans', sans-serif;
+    background: var(--primary-light);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.cartao {
+    border: 1px solid red;
+    width: 350px;
+    height: 375px;
+    border-radius: 15px;
+    background-color: aliceblue;
+}
+
+.cartao img { 
+    border-radius: 50%;
+}
