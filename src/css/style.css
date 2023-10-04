@@ -3,15 +3,31 @@
 body {
     font-family: 'kumbh sans', sans-serif;
     background: var(--primary-light);
-    height: 100vh;
+    max-height: 100vh;
     font-size: 18px;
+    overflow: hidden;
+    position: relative;
+}
+
+body::after {
+    content: url("../image/bg-pattern-bottom.svg");
+    position: absolute; 
+    right: -10%;
+    bottom: -90%;   
+}
+
+body::before {
+    content: url("../image/bg-pattern-top.svg");
+    position: absolute; 
+    left: -15%;
+    top: -80%;   
 }
 
 main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 100vh;
 }
 
 .cartao {
@@ -24,7 +40,9 @@ main {
     margin: 20px;
     border-radius: 15px;
     gap: 25px;
+    background: url(../image/bg-pattern-card.svg) top no-repeat;
     background-color: aliceblue;
+    z-index: 1;
 }
 
 .cartao .perfil {
@@ -33,12 +51,11 @@ main {
     justify-content: space-around;
     align-items: center;
     height: 100%;
-    /* background-image: url(/src/image/bg-pattern-card.svg); */
 }
 
 .cartao img {
-    width: 80px;
-    height: 80px;
+    width: 96px;
+    height: 96px;
     margin-top: 80px;
     border: 2px solid white;
     border-radius: 50%;
@@ -51,7 +68,7 @@ main {
     width: 100%;
     padding-bottom: 30px;
     padding-top: 30px;
-    border-top: 0.5px groove gainsboro;
+    border-top: 1px groove gainsboro;
 }
 
 .cidade {
